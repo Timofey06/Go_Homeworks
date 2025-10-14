@@ -12,7 +12,7 @@ func HardOpHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	delay := time.Duration(1+rand.Intn(11)) * time.Second
+	delay := time.Duration(10+rand.Intn(11)) * time.Second
 	time.Sleep(delay)
 
 	rand.NewSource(time.Hour.Microseconds())
